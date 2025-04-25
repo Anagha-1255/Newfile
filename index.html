@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mukhtara - Premium Recipes & Shopping</title>
+    <link rel="stylesheet" href="./css/script.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body >
+    <header>
+        <h1>Mukhtara</h1>
+        <button onclick="seeRecipies()">See Recipes</button>
+        <button onclick="seeProduct()">See Products</button>
+    </header>
+    
+
+    <section id="about" class="fade-in">
+        <div class="about-left">
+            <video autoplay loop muted>
+                <source src="./images/0220(2).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="about-right">
+            <h2>About Mukhtara</h2>
+            <p>Welcome to <strong>Mukhtara</strong>, your gateway to refined culinary experiences and premium shopping.
+            </p>
+            <p>Whether you're looking for exquisite recipes or the finest kitchen essentials, Mukhtara curates only the
+                best for you.</p>
+            <p>Explore, indulge, and elevate your lifestyle with a touch of luxury and elegance.</p>
+        </div>
+    </section>
+
+    <div class="main fade-in">
+
+        <h2 class="recipe-head" id="recipe-head"> </h2>
+
+        <div class="sec-button">
+
+        <div id="time-filter-section" class="time-filter-container"></div>
+
+        </div>
+        
+        <div id="show-data" class="grid-container"></div>
+
+        <h2 class="product-head" id="product-head"> </h2>
+
+        <div class="sec-button">
+            <div id="category-section" class="category-container"></div>
+        </div>
+        <div id="product-list" class="grid-container"></div>
+    </div>
+
+    <section id="featured-products" class="fade-in">
+        <h2>Featured Products</h2>
+        <div class="featured-container">
+            <div class="featured-item">
+                <img src="./images/cooking-set.jpeg" alt="Luxury Cooking Set">
+                <h3>Luxury Cooking Set</h3>
+                <p>High-quality, gold-plated cookware for elegant cooking.</p>
+                <button class="buy-now">Shop Now</button>
+            </div>
+            <div class="featured-item">
+                <img src="./images/spices.jpeg" alt="Premium Spices">
+                <h3>Premium Spices</h3>
+                <p>Hand-picked spices to elevate your dishes.</p>
+                <button class="buy-now">Shop Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-slider-container">
+            <button class="prev" onclick="moveSlide(-1)" aria-label="Previous testimonial">❮</button>
+            <div class="testimonial-slider">
+                <div class="testimonial-container">
+                    <div class="testimonial">
+                        <p>"Amazing service! Exceeded my expectations in every way. ⭐⭐⭐⭐⭐"</p>
+                        <h4>- James Anderson 😊</h4>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Highly professional and great attention to detail. Would recommend! 👏🎯"</p>
+                        <h4>- Emily Carter 👍</h4>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Absolutely wonderful experience. Will definitely return for more projects! 🔥🎉"</p>
+                        <h4>- Michael Brown 😃</h4>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Amazing service! Exceeded my expectations in every way. ⭐⭐⭐⭐⭐"</p>
+                        <h4>- James Anderson 😊</h4>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Highly professional and great attention to detail. Would recommend! 👏🎯"</p>
+                        <h4>- Emily Carter 👍</h4>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Absolutely wonderful experience. Will definitely return for more projects! 🔥🎉"</p>
+                        <h4>- Michael Brown 😃</h4>
+                    </div>
+                    <!-- Add more testimonials as needed -->
+                </div>
+            </div>
+            <button class="next" onclick="moveSlide(1)" aria-label="Next testimonial">❯</button>
+        </div>
+    </section>
+
+    <section id="partners">
+        <h2>Our Partners</h2>
+        <div class="partner-section">
+            <div class="partner-logo">
+              <img src="./images/partner1.jpeg" alt="Partner 1">
+            </div>
+            <div class="partner-logo">
+              <img src="./images/partner2.jpeg" alt="Partner 2">
+            </div>
+            <div class="partner-logo">
+              <img src="./images/partner3.jpeg" alt="Partner 3">
+            </div>
+          </div>          
+    </section>
+
+    <form id="contact">
+
+        <div class="contact-container">
+            <h2>Get in Touch</h2>
+            <div class="contact-form">
+                <input type="text" placeholder="Your Name" >
+                <input type="email" placeholder="Your Email" >
+                <input type="text" placeholder="Subject" >
+                <textarea placeholder="Your Message" rows="5" ></textarea>
+                <button type="submit">Send Message</button>
+            </div>
+
+            <div class="contact-info">
+                <h3>Way to reach us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Luxury Avenue, Dubai, UAE</p>
+                <p><i class="fas fa-phone-alt"></i> +971 55 123 4567</p>
+                <p><i class="fas fa-envelope"></i> contact@mukhtara.com</p>
+                <p><i class="fas fa-clock"></i> Mon - Fri: 9 AM - 6 PM</p>
+                <p><i class="fas fa-globe"></i> <a href="#" class="site" >www.mukhtara.com</a></p>
+
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+    <footer class="fade-in">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Mukhtara</h3>
+                <p>Experience luxury with premium recipes and top-quality products. Elevate your lifestyle with
+                    Mukhtara.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <p class="footer-bottom">© 2025 Mukhtara | All Rights Reserved</p>
+    </footer>
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
